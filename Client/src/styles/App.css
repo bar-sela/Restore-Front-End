@@ -1,0 +1,11 @@
+.catalog-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 2px solid #1976d2;
+    padding-bottom: 0.5rem;
+    width: fit-content;
+  }

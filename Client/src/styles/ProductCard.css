@@ -1,0 +1,107 @@
+/* כרטיס מוצר */
+.product-card {
+  width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #121212;
+  color: #fff;
+  box-shadow: none;
+  border: 1px solid #2a2a2a;
+  transition: transform 0.3s ease;
+  margin: 30px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.product-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.product-price {
+  font-size: 1rem;
+  color: #cccccc;
+  margin-top: 0.5rem;
+}
+
+.product-unavailable {
+  background-color: #1e1e1e;
+  color: #fff;
+  border: 2px solid #c62828;
+}
+
+.product-unavailable .product-name,
+.product-unavailable .product-price {
+  color: #fff;
+}
+
+/* אפליקציה */
+.app-wrapper.light {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.app-wrapper.dark {
+  background-color: #121212;
+  color: #fff;
+}
+
+/* כרטיס מוצר כהה */
+.product-card.product-dark {
+  background-color: #121212;
+  color: #fff;
+  border: 1px solid #2a2a2a;
+}
+
+.product-card.product-dark .product-name,
+.product-card.product-dark .product-price {
+  color: #fff;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  /* ביטול padding בצדדים */
+  padding: 0;
+}
+
+.action-button {
+  background-color: transparent;
+  border: none;
+  color: #2196f3;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+  width: 50%; /* כל כפתור תופס חצי מהשורה */
+  text-align: center; /* ממרכז את הטקסט בכפתור */
+
+}
+
+.action-button.right {
+  padding-left: 4rem;
+}
+
+.action-button.left {
+  padding-right: 2rem;
+}
+
+.action-button:hover {
+  color: #64b5f6;
+}

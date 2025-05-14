@@ -1,0 +1,29 @@
+.navbar {
+    background-color: #1976d2; /* כחול בסגנון Material UI */
+    padding: 30px;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+  .navbar-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .theme-icon {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .theme-icon:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* אפקט קליק */
+    transform: scale(1.1); /* מעט גדילה */
+  }
