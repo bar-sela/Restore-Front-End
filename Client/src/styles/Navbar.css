@@ -1,29 +1,58 @@
 .navbar {
-    background-color: #1976d2; /* כחול בסגנון Material UI */
-    padding: 30px;
-    font-family: 'Segoe UI', sans-serif;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  background-color: #0d83ec;
+  padding: 1rem;
+  color: white;
+  font-family: 'Segoe UI', sans-serif; /* גופן */
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-right: 1rem;
 }
   
-  .navbar-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-  
-  .theme-icon {
-    width: 36px;
-    height: 36px;
-    cursor: pointer;
-    padding: 6px;
-    border-radius: 50%;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  .theme-icon:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* אפקט קליק */
-    transform: scale(1.1); /* מעט גדילה */
-  }
+.theme-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0 8px;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar-middle {
+  display: flex;            /* חובה כדי ש-align-items ו-gap יעבדו */
+  align-items: center;      /* ממרכז את האלמנטים אנכית */
+  gap: 12px;                /* מרווח בין הילדים */
+  margin-left: auto;        /* אם רוצים לדחוף את הקבוצה לצד ימין */
+}
+.navbar-right {
+  margin-left: auto;
+  display: flex;       
+  align-items: center;
+  gap: 12px;
+}
+.left {
+  display: flex;
+  justify-content: flex-start; /* יישר לשמאל */
+}
+
+.nav-link:hover {
+  color: #dddddd;
+}
+
+.nav-link--active {
+  color:rgb(0, 192, 182); 
+  text-decoration: underline;
+}
+
+color:rgb(0, 192, 182); 

@@ -1,0 +1,26 @@
+.cart-icon-wrapper {
+  position: relative;    /* כדי שה-badge יישב יחסית אליו */
+  width: 24px;           /* גודל כולל של האייקון */
+  height: 24px;
+  flex-shrink: 0;        /* אם בתוך flex container – לא יצומצם */
+}
+
+.cart-icon {
+  display: block;        /* כדי שלא יישאר מרווח לבן מתחת */
+  width: 100%;           /* ימלא את כל המכל */
+  height: 100%;
+  object-fit: contain;   /* ישמור על יחס הגובה־רוחב */
+}
+
+.cart-badge {
+  position: absolute;
+  top: -4px;             /* תזיז מעט החוצה כדי שלא יתחתך */
+  right: -4px;
+  background-color: red; /* עיגול אדום */
+  color: white;
+  font-size: 10px;       /* קטן יותר */
+  padding: 2px 4px;      /* קטן יותר */
+  border-radius: 50%;
+  line-height: 1;        /* לא לאפשר קפיצות בגובה השורה */
+  font-weight: bold;
+}

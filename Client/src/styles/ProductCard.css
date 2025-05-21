@@ -1,6 +1,6 @@
 /* כרטיס מוצר */
 .product-card {
-  width: 300px;
+  width: 400px;
   border-radius: 12px;
   overflow: hidden;
   background-color: #121212;
@@ -8,7 +8,6 @@
   box-shadow: none;
   border: 1px solid #2a2a2a;
   transition: transform 0.3s ease;
-  margin: 30px;
 }
 
 .product-card:hover {
@@ -17,12 +16,15 @@
 
 .product-image {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: 300px;
+  object-fit: contain;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #fff; /* רקע מאחורי תמונה אם יש רווחים */
 }
-
 .product-content {
-  padding: 1rem;
+  
+  padding: 2px;
   text-align: center;
 }
 

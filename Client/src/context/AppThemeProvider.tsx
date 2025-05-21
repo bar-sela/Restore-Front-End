@@ -35,3 +35,4 @@ export function useTheme() {
   }
   return context;
 }
+//// add more functions here to access other  theme context
