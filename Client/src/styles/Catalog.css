@@ -1,11 +1,9 @@
-.   catalog-container {
-  display: flex;
-  flex-direction: column;
-  margin-left: 0; /* או תכתוב ערך שמתאים לך, למשל 20px */
-  justify-content: flex-end;
+.catalog-container {
+  width: 100%;                     /* למנועה קצוות*/
+  min-height: 100vh;            /* גובה מינימלי של המסך */
+  background-color: #121212;    /* רקע שחור */
+  padding-top: 2rem;               /* בשביל להגדיר רקע של קונטיינר אפשר לעשות padding*/ 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-bottom: 20%;
-  margin-top: 7px;
 }
 
 .catalog-container.light {
@@ -36,18 +34,22 @@
 }
 
 .add-button {
-  margin-top: 16rem;
-  padding: 0.75rem 1.5rem;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 0.4rem 1rem;
   background-color: #1976d2;
   color: white;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 500;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
+  z-index: 1000;
 }
 
 .add-button:hover {
-  background-color: #155a9c;
+  background-color: #125ea5;
 }

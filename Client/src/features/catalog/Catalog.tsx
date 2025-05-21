@@ -2,6 +2,7 @@ import "../../styles/Catalog.css";
 import ProductList from "./ProductList";
 import { useEffect, useState } from "react";
 import { Product } from "../../app/models/Product";
+import { useTheme } from "../../context/AppThemeProvider";
 
 export default function Catalog() {
   const [products, setProducts] = useState<Product[]>([]);
@@ -9,6 +10,7 @@ export default function Catalog() {
   const [error, setError] = useState<string | null>(null);
 
   const addProduct = (): void => {};
+  const theme =  useTheme()
 
   useEffect(() => {
     const fetchData = async () => {
@@ -38,7 +40,7 @@ export default function Catalog() {
   if (error) return <p>Error: {error}</p>;
 
   return (
-    <div className={`catalog-container`}>
+    <div className={`catalog-container ${theme.theme === 'dark' ? 'dark' : 'light'}`}>
       {products.length === 0 ? (
         <p>No products found.</p>
       ) : (
