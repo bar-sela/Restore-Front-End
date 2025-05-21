@@ -1,109 +1,74 @@
-/* כרטיס מוצר */
 .product-card {
-  width: 400px;
+  width: 280px;
   border-radius: 12px;
   overflow: hidden;
-  background-color: #121212;
-  color: #fff;
-  box-shadow: none;
-  border: 1px solid #2a2a2a;
-  transition: transform 0.3s ease;
+  background-color: #ffffff;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 1rem;
 }
 
 .product-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .product-image {
   width: 100%;
-  height: 300px;
+  height: 200px;
   object-fit: contain;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  background-color: #fff; /* רקע מאחורי תמונה אם יש רווחים */
+  background-color: #f5f5f5;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
+
 .product-content {
-  
-  padding: 2px;
+  padding: 1rem;
   text-align: center;
 }
 
 .product-name {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  color: #ffffff;
-  margin: 0;
+  color: #222;
+  margin: 0.5rem 0 0.2rem;
 }
 
 .product-price {
   font-size: 1rem;
-  color: #cccccc;
-  margin-top: 0.5rem;
-}
-
-.product-unavailable {
-  background-color: #1e1e1e;
-  color: #fff;
-  border: 2px solid #c62828;
-}
-
-.product-unavailable .product-name,
-.product-unavailable .product-price {
-  color: #fff;
-}
-
-/* אפליקציה */
-.app-wrapper.light {
-  background-color: #f8f8f8;
-  color: #333;
-}
-
-.app-wrapper.dark {
-  background-color: #121212;
-  color: #fff;
-}
-
-/* כרטיס מוצר כהה */
-.product-card.product-dark {
-  background-color: #121212;
-  color: #fff;
-  border: 1px solid #2a2a2a;
-}
-
-.product-card.product-dark .product-name,
-.product-card.product-dark .product-price {
-  color: #fff;
+  color: #b000b5;
+  margin-top: 0.2rem;
+  font-weight: bold;
 }
 
 .product-actions {
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
-  /* ביטול padding בצדדים */
-  padding: 0;
 }
 
 .action-button {
   background-color: transparent;
   border: none;
-  color: #2196f3;
-  font-weight: bold;
+  color: #1976d2;
+  font-weight: 600;
   cursor: pointer;
   padding: 0.5rem 0;
+  width: 50%;
+  text-align: center;
   transition: color 0.3s ease;
-  width: 50%; /* כל כפתור תופס חצי מהשורה */
-  text-align: center; /* ממרכז את הטקסט בכפתור */
-
-}
-
-.action-button.right {
-  padding-left: 4rem;
-}
-
-.action-button.left {
-  padding-right: 2rem;
 }
 
 .action-button:hover {
-  color: #64b5f6;
+  color: #0d47a1;
+}
+
+.action-button.right {
+  padding-left: 1rem;
+}
+
+.action-button.left {
+  padding-right: 1rem;
 }
